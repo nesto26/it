@@ -1,1 +1,14 @@
+name: Basic Docker Workflow
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  basic-docker-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Welcome Message
+        run: echo "Welcome to Docker!"
